@@ -10,5 +10,19 @@ h = Convert.ToInt32(Console.ReadLine());
 
 Rettangolo r1=new Rettangolo(b, h);
 
-Console.WriteLine("Il perimetro è: " + r1.calcolaPerimetro());
-Console.WriteLine("L'area è: " + r1.calcolaArea());
+
+Rettangolo r2 = new Rettangolo(7, 3);
+
+Rettangolo r3 = new Rettangolo(2, 8);
+
+
+Console.WriteLine("Rettangolo1:");
+r1.stampaRettangolo();
+
+
+Console.WriteLine("Rettangolo2:");
+r2.stampaRettangolo();
+
+
+Console.WriteLine("Rettangolo3:");
+r3.stampaRettangolo();

@@ -26,5 +26,13 @@ namespace csharp_geometria
         {
             return 2*(baseRettangolo + altezzaRettangolo);
         }
+
+        public void stampaRettangolo()
+        {
+            Console.WriteLine($"base: {baseRettangolo} cm");
+            Console.WriteLine($"altezza: {altezzaRettangolo} cm");
+            Console.WriteLine($"perimetro: {calcolaPerimetro()} cm");
+            Console.WriteLine($"area: {calcolaArea()} cm2");
+        }
     }
 }
