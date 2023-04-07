@@ -8,7 +8,7 @@ namespace csharp_geometria
 {
     internal class Rettangolo
     {
-        public int baseRettangolo, altezzaRettangolo;
+        private int baseRettangolo, altezzaRettangolo;
 
         public Rettangolo(int baseRettangolo, int altezzaRettangolo)
         {
@@ -34,5 +34,19 @@ namespace csharp_geometria
             Console.WriteLine($"perimetro: {calcolaPerimetro()} cm");
             Console.WriteLine($"area: {calcolaArea()} cm2");
         }
+
+        public int getBaseRettangolo()
+        {
+            return baseRettangolo;
+        }
+
+        public void setBaseRettangolo(int baseRettangolo)
+        {
+            if (baseRettangolo > 0)
+                this.baseRettangolo = baseRettangolo;
+            else
+                Console.WriteLine("Base non valida");
+        }
+
     }
 }
